@@ -146,13 +146,11 @@
             "apiVersion": "2016-09-01",
             "name": "[variables('ServicePlan')]",
             "location": "[resourceGroup().location]",
-            "properties": {
-                "name": "[variables('ServicePlan')]",
-                "sku": {
-                    "tier": "[parameters('appServicePlanTier')]",
-                    "name": "[parameters('appServicePlanName')]",
-                    "capacity": "[parameters('appServicePlanCapacity')]"
-                }
+            "sku": {
+                "tier": "[parameters('appServicePlanTier')]",
+                "name": "[parameters('appServicePlanName')]",
+                "capacity": "[parameters('appServicePlanCapacity')]"
+
             }
         },
         {
